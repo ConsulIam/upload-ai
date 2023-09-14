@@ -1,0 +1,10 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+# Audio files examples
+sample-3.mp3
+sample-4.mp3
+
+# tmp folder
+tmp/

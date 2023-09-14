@@ -1,0 +1,37 @@
+# @name get-prompts
+GET http://localhost:11337/prompts
+
+###
+
+# @name upload
+POST http://localhost:11337/videos
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="sample-4.mp3"
+Content-Type: audio/mpeg
+
+< ./sample-4.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+# @name create-transcription
+POST http://localhost:11337/videos/163933fa-a014-4743-8a98-f4115c48f1a7/transcription
+Content-Type: application/json
+
+{
+    "prompt": "tomorrow"
+}
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:11337/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "163933fa-a014-4743-8a98-f4115c48f1a7",
+    "template": "Create a short story with maximum 500 characters about: '''{transcription}'''",
+    "temperature": 0.3
+}
