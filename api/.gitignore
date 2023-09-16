@@ -1,5 +1,7 @@
+# Node modules
 node_modules
-# Keep environment variables out of version control
+
+# Environment variables
 .env
 
 # Audio files examples
@@ -8,3 +10,6 @@ sample-4.mp3
 
 # tmp folder
 tmp/
+
+# File database
+api/prisma/dev.db

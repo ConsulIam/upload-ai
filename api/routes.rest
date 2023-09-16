@@ -3,7 +3,20 @@ GET http://localhost:11337/prompts
 
 ###
 
-# @name upload
+# @name upload-en-audio
+POST http://localhost:11337/videos
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="sample-3.mp3"
+Content-Type: audio/mpeg
+
+< ./sample-3.mp3
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+# @name upload-es-audio
 POST http://localhost:11337/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
@@ -17,7 +30,7 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-POST http://localhost:11337/videos/163933fa-a014-4743-8a98-f4115c48f1a7/transcription
+POST http://localhost:11337/videos/4ae6a9e1-76da-4dcc-bef6-1fee7b1c4a73/transcription
 Content-Type: application/json
 
 {
@@ -31,7 +44,7 @@ POST http://localhost:11337/ai/complete
 Content-Type: application/json
 
 {
-    "videoId": "163933fa-a014-4743-8a98-f4115c48f1a7",
-    "template": "Create a short story with maximum 500 characters about: '''{transcription}'''",
+    "videoId": "4ae6a9e1-76da-4dcc-bef6-1fee7b1c4a73",
+    "prompt": "Create a short story in portuguese with maximum 500 characters about: '''{transcription}'''. Response in portugues",
     "temperature": 0.3
 }
