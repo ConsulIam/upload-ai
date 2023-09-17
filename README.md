@@ -10,11 +10,11 @@
 
 <p align="center">
  <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#how-execute">How execute</a> • 
- <a href="#technologies">Technologies</a> •  
- <a href="#author">Author</a> • 
- <a href="#license">License</a>
+ <a href="#rocket-features">Features</a> •
+ <a href="#computer-how-execute">How execute</a> • 
+ <a href="#wrench-technologies">Technologies</a> •  
+ <a href="#alien-author">Author</a> • 
+ <a href="#bookmark_tabs-license">License</a>
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@ Generate creative titles, summaries and quizzes for your videos. Free yourself f
 
 
 
-## :movie_camera: Demo
+## Demo :movie_camera: 
 
 https://github.com/ConsulIam/upload-ai/assets/25617605/6665959b-90f1-497e-8aed-fc0fcf58dcb4
 
@@ -58,7 +58,7 @@ https://github.com/ConsulIam/upload-ai/assets/25617605/6665959b-90f1-497e-8aed-f
 
 ## :computer: How Execute
 
-### Clone Time Capsule repository
+### Clone Upload AI repository
 
 ```bash
 $ git clone https://github.com/ConsulIam/upload-ai.git
@@ -128,11 +128,22 @@ $ npm run dev
 ## :alien: Author
 
 <p align="center">
-<a href="https://bc.consuliam.com">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/25617605?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>🤖 Iván Lasso ⚙️</b></sub></a> <a href="https://bc.consuliam.com" title="ConsulIAm"></a>
- <br />
+	<a
+		href="https://bc.consuliam.com">
+		<img style="border-radius: 50%;"
+		src="https://avatars.githubusercontent.com/u/25617605?v=4"
+		width="256px;"
+		alt="Iván Lasso"/>
+	<br />
+	</a>
+	<a
+		href="https://bc.consuliam.com"
+		title="ConsulIAm">
+		<sub>
+			<b>🤖 Iván Lasso ⚙️</b>
+		</sub>
+	</a>
+	<br />
  </p>
 
 ---

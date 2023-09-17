@@ -45,6 +45,6 @@ Content-Type: application/json
 
 {
     "videoId": "4ae6a9e1-76da-4dcc-bef6-1fee7b1c4a73",
-    "prompt": "Create a short story in portuguese with maximum 500 characters about: '''{transcription}'''. Response in portugues",
+    "prompt": "Create a short story in portuguese with maximum 500 characters about: '''{transcription}'''. Response in portuguese",
     "temperature": 0.3
 }
