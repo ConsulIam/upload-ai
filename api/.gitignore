@@ -13,3 +13,6 @@ tmp/
 
 # File database
 api/prisma/dev.db
+
+# Rest client test
+r2.rest
